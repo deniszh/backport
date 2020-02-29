@@ -13,7 +13,7 @@ jobs:
       - name: Backport Bot
         uses: graphite-project/backport@v1.0.24
         with:
-          bot_username: backport-bot
+          bot_username: graphite-ghactions-bot
           bot_token: ${{ secrets.BACKPORT_XORED_TOKEN }}
           bot_token_key: ${{ secrets.BACKPORT_TOKEN_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
