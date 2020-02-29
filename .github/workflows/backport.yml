@@ -11,9 +11,9 @@ jobs:
     name: Backport
     steps:
       - name: Backport Bot
-        uses: Gaurav0/backport@v1.0.24
+        uses: graphite-project/backport@v1.0.24
         with:
           bot_username: backport-bot
-          bot_token: 06718cdf93aa06311e679cd152c46f90199e12fb
-          bot_token_key: a1b2c3d47311f8e29e204f85a81b4df4a44e252c
+          bot_token: ${{ secrets.BACKPORT_XORED_TOKEN }}
+          bot_token_key: ${{ secrets.BACKPORT_TOKEN_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
